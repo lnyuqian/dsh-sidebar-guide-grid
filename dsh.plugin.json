@@ -1,0 +1,15 @@
+{
+  "name": "dsh-sidebar-guide-grid",
+  "description": "右侧边栏「开始」页入口两列排布（上下内边距 -4px、间距 -2px）",
+  "version": "0.1.0",
+  "entry": {
+    "name": "dsh-sidebar-guide-grid",
+    "inject": []
+  },
+  "client": {
+    "platform": "web",
+    "inject": [
+      "@deepseek-ai/dsh-client-ui-sidebar-right"
+    ]
+  }
+}

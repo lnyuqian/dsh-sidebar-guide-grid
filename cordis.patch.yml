@@ -1,0 +1,11 @@
+# dsh-sidebar-guide-grid bundle patch
+#
+# 只挂一行 loader：插件本体是纯客户端（lib/client.js，dsh.client 声明），
+# 宿主半边 lib/index.js 不做任何事。
+#
+# 挂载于 DSH 官方右侧边栏（@deepseek-ai/dsh-client-ui-sidebar-right）的
+# 「开始」引导页，往 document.head 注入一段 CSS，把入口胶囊从单列改成一列两个。
+# 不改宿主任何文件；停用本插件（或删掉下面 insert 整段）即完全还原。
+- insert:
+    - id: dsh-sidebar-guide-grid
+      name: 'dsh-sidebar-guide-grid'
